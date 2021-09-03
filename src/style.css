@@ -1,6 +1,5 @@
 :root {
   --heading-font: "Cormorant Garamond", serif;
-  --background-color: #ede9df;
   --accent-background-color: lightgray;
   --accent-color: black;
 }
@@ -38,11 +37,12 @@ a:hover {
 }
 
 nav {
+  background-color: var(--accent-background-color);
   border-bottom: 1px solid;
 }
-nav,
 footer {
-  background-color: var(--background-color);
+  background-color: var(--accent-background-color);
+  border-top: 1px solid;
 }
 h6 {
   font-weight: light;
@@ -50,6 +50,7 @@ h6 {
   text-align: right;
 }
 
+/* navbar */
 .navbar {
   padding: 0 30px;
   background-color: var(--accent-background-color);
@@ -69,6 +70,8 @@ h6 {
 .logo span {
   font-size: 20px;
 }
+
+/* homepage */
 .front-page {
   height: 100vh;
   position: relative;
@@ -94,31 +97,6 @@ h6 {
   height: 20vw;
 }
 
-/* gallery */
-.gallery-navbar {
-  background-color: black;
-}
-.gallery-navbar .logo {
-  color: white;
-}
-.carousel-inner {
-  height: 100vh;
-  background-color: black;
-}
-.carousel-inner a {
-  padding-top: 15vh;
-}
-.carousel-item {
-  padding-top: 85px;
-}
-.carousel-item img {
-  height: 100vh;
-  margin: 0 auto;
-}
-
-.wrapper {
-  padding-top: clamp(175px, 25vw, 215px);
-}
 .fas,
 .fab {
   color: black;
@@ -172,11 +150,68 @@ h6 {
   width: 100%;
 }
 
+/* gallery */
+.gallery-navbar {
+  background-color: black;
+}
+.gallery-navbar .logo {
+  color: white;
+}
+.carousel-inner {
+  height: 100vh;
+  background-color: black;
+}
+.carousel-inner a {
+  padding-top: 15vh;
+}
+.carousel-item {
+  padding-top: 85px;
+}
+.carousel-item img {
+  height: 100vh;
+  margin: 0 auto;
+}
+
+/* prices */
+.prices-navbar {
+  background-color: #ede9df;
+}
+.wrapper {
+  padding: 17vh 0 6vh 0;
+}
 .price-subtitle {
   font-size: 16px;
   text-decoration: underline;
 }
 
+/* products */
+.products-navbar {
+  background-color: #343a40;
+}
+.products-navbar .logo {
+  color: white;
+}
+.john-mitchell-wrap {
+  margin-top: 150px;
+}
+.cloud-nine-wrap {
+  background-color: var(--accent-background-color);
+  padding: 50px 0;
+  margin: 50px 0;
+}
+.products-p {
+  font-size: 25px;
+  margin: 20px 40px;
+}
+.btn {
+  margin: 0 auto;
+}
+.btn-light {
+  background-color: var(--accent-background-color);
+  border-color: var(--accent-background-color);
+}
+
+/* contact */
 .contact-wrapper {
   padding-top: clamp(150px, 31vw, 240px);
 }
@@ -204,6 +239,7 @@ h6 {
   color: #f78e24;
 }
 
+/* kelcodes */
 .open-source-link,
 .open-source-link:hover,
 .fa-spider {
