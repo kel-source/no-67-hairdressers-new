@@ -164,7 +164,7 @@ h6 i {
 }
 .carousel-inner {
   height: 100vh;
-  background-color: black;
+  background-color: var(--accent-color);
 }
 .carousel-inner a {
   padding-top: 15vh;
@@ -215,11 +215,11 @@ h6 i {
   color: white;
 }
 .contact-wrapper {
-  padding: 25vh 0 10vh 0;
+  padding: 24vh 0 10vh 0;
 }
 .contact-link {
   font-size: 100px;
-  color: black;
+  color: var(--accent-color);
 }
 .contact-link:hover {
   transition: 1.25s;
@@ -261,6 +261,17 @@ h6 i {
   }
   .front-page-content h5 {
     font-size: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .contact-icons {
+    height: 71vh;
+  }
+  .contact-address {
+    height: 81vh;
+  }
+  .contact-address h3 {
+    margin-top: 30vh;
   }
 }
 @media (max-width: 992px) {
