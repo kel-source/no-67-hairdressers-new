@@ -91,7 +91,29 @@ h6 {
   left: 0;
   right: 0;
   margin: auto;
-  height: 15vw;
+  height: 20vw;
+}
+
+/* gallery */
+.gallery-navbar {
+  background-color: black;
+}
+.gallery-navbar .logo {
+  color: white;
+}
+.carousel-inner {
+  height: 100vh;
+  background-color: black;
+}
+.carousel-inner a {
+  padding-top: 15vh;
+}
+.carousel-item {
+  padding-top: 85px;
+}
+.carousel-item img {
+  height: 100vh;
+  margin: 0 auto;
 }
 
 .wrapper {
