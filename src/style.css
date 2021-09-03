@@ -41,13 +41,18 @@ nav {
   border-bottom: 1px solid;
 }
 footer {
-  background-color: var(--accent-background-color);
+  background-color: var(--accent-color);
   border-top: 1px solid;
 }
 h6 {
   font-weight: light;
   font-size: xx-small;
   text-align: right;
+}
+h6,
+h6 a,
+h6 i {
+  color: white !important;
 }
 
 /* navbar */
@@ -152,7 +157,7 @@ h6 {
 
 /* gallery */
 .gallery-navbar {
-  background-color: black;
+  background-color: var(--accent-color);
 }
 .gallery-navbar .logo {
   color: white;
@@ -173,9 +178,6 @@ h6 {
 }
 
 /* prices */
-.prices-navbar {
-  background-color: #ede9df;
-}
 .wrapper {
   padding: 17vh 0 6vh 0;
 }
@@ -185,12 +187,6 @@ h6 {
 }
 
 /* products */
-.products-navbar {
-  background-color: #343a40;
-}
-.products-navbar .logo {
-  color: white;
-}
 .john-mitchell-wrap {
   margin-top: 150px;
 }
@@ -212,8 +208,14 @@ h6 {
 }
 
 /* contact */
+.contact-navbar {
+  background-color: var(--accent-color);
+}
+.contact-navbar .logo {
+  color: white;
+}
 .contact-wrapper {
-  padding-top: clamp(150px, 31vw, 240px);
+  padding: 25vh 0 10vh 0;
 }
 .contact-link {
   font-size: 100px;
@@ -261,6 +263,11 @@ h6 {
     font-size: 20px;
   }
 }
+@media (max-width: 992px) {
+  .md-hidden {
+    display: none;
+  }
+}
 @media (min-width: 1000px) {
   .front-page-content {
     height: 200px;
@@ -270,5 +277,11 @@ h6 {
   }
   .front-page-content h5 {
     font-size: 25px;
+  }
+  .sm-product-img {
+    width: 250px;
+  }
+  .lg-product-img {
+    width: 190px;
   }
 }
