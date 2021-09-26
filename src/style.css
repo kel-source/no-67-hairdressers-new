@@ -23,9 +23,6 @@ h5 {
   font-family: var(--heading-font);
   font-weight: bold;
 }
-hr {
-  background-color: var(--accent-color);
-}
 a {
   color: black;
   text-decoration: none;
