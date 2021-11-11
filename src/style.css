@@ -206,7 +206,8 @@ h6 i {
 
 /* eco */
 .eco-container {
-  margin: 0 30px;
+  margin: 0 auto;
+  width: 85%;
 }
 .eco a {
   text-decoration: underline;
@@ -217,6 +218,7 @@ h6 i {
 }
 .did-you-know {
   background-color: #4d7700;
+  display: inline-block;
   color: white;
   padding: 10px 15px 12px 15px;
   font-weight: 600;
@@ -313,5 +315,8 @@ h6 i {
   }
   .lg-product-img {
     width: 190px;
+  }
+  .eco-container {
+    max-width: 1300px;
   }
 }
