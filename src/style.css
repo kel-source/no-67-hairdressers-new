@@ -208,6 +208,7 @@ h6 i {
 .eco-container {
   margin: 0 auto;
   width: 85%;
+  padding-bottom: 20px;
 }
 .eco a {
   text-decoration: underline;
@@ -226,6 +227,10 @@ h6 i {
 }
 .fa-heart {
   color: red;
+}
+.in-truth,
+.in-truth h5 {
+  margin-bottom: 0;
 }
 
 /* contact */
