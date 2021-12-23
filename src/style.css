@@ -310,6 +310,12 @@ hr {
   .wrapper {
     padding: 150px 50px 15px 50px;
   }
+  .contact-icons {
+    padding-top: 26vh;
+  }
+  .contact-address {
+    height: 102vh;
+  }
 }
 @media (max-width: 600px) {
   nav {
