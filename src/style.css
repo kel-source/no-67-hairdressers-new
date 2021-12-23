@@ -2,6 +2,7 @@
   --heading-font: "Cormorant Garamond", serif;
   --accent-background-color: lightgray;
   --accent-color: black;
+  --transition: ease-in-out 0.3s;
 }
 
 html,
@@ -51,19 +52,32 @@ h6 a,
 h6 i {
   color: white !important;
 }
+hr {
+  background-color: #1d2124;
+  margin: 30px 0;
+}
+
+.container {
+  width: 90%;
+  margin-top: 200px;
+}
 
 /* navbar */
 .navbar {
-  padding: 0 30px;
+  padding: 15px 46px 15px 46px;
   background-color: var(--accent-background-color);
 }
+.nav-link {
+  font-size: 20px;
+}
 .logo {
-  font-size: 50px;
+  font-size: 60px;
   text-decoration: none;
   color: black;
   font-family: var(--heading-font);
   line-height: 20px;
   padding: 25px 0 10px 0;
+  text-align: center;
 }
 .logo:hover {
   text-decoration: inherit;
@@ -176,7 +190,7 @@ h6 i {
 
 /* prices */
 .wrapper {
-  padding: 17vh 0 6vh 0;
+  padding: 15vh 46px;
 }
 .price-subtitle {
   font-size: 16px;
@@ -198,18 +212,23 @@ h6 i {
 }
 .btn {
   margin: 0 auto;
+  transition: var(--transition);
 }
 .btn-light {
   background-color: var(--accent-background-color);
   border-color: var(--accent-background-color);
 }
+.btn-light:hover {
+  background-color: transparent;
+  border-color: #1d2124;
+  color: black;
+}
+.btn-dark:hover {
+  background-color: transparent;
+  color: black;
+}
 
 /* eco */
-.eco-container {
-  margin: 0 auto;
-  width: 85%;
-  padding-bottom: 20px;
-}
 .eco a {
   text-decoration: underline;
   font-weight: bold;
@@ -217,19 +236,15 @@ h6 i {
 .eco a:hover {
   color: #003700;
 }
-.did-you-know {
-  background-color: #4d7700;
-  display: inline-block;
-  color: white;
-  padding: 10px 15px 12px 15px;
-  font-weight: 600;
-  border-radius: 5px;
+.heart-wrap {
+  text-align: center;
+  margin-bottom: 10px;
 }
-.fa-heart {
+.heart-wrap i {
   color: red;
+  font-size: 25px;
 }
-.in-truth,
-.in-truth h5 {
+.in-truth {
   margin-bottom: 0;
 }
 
@@ -288,8 +303,14 @@ h6 i {
   .front-page-content h5 {
     font-size: 20px;
   }
+  .wrapper {
+    padding: 150px 50px 15px 50px;
+  }
 }
 @media (max-width: 600px) {
+  h2 {
+    font-size: 50px;
+  }
   .contact-icons {
     height: 71vh;
   }
@@ -320,8 +341,5 @@ h6 i {
   }
   .lg-product-img {
     width: 190px;
-  }
-  .eco-container {
-    max-width: 1300px;
   }
 }
