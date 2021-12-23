@@ -60,7 +60,7 @@ hr {
 
 .container {
   width: 90%;
-  margin: 175px auto;
+  margin: 175px auto 30px auto;
   padding: 0;
 }
 
@@ -303,6 +303,9 @@ hr {
   }
 }
 @media (max-width: 600px) {
+  nav {
+    padding: 15px 25px !important;
+  }
   h2 {
     font-size: 50px;
   }
