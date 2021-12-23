@@ -37,6 +37,7 @@ a:hover {
 nav {
   background-color: var(--accent-background-color);
   border-bottom: 1px solid;
+  padding: 15px 50px !important;
 }
 footer {
   background-color: var(--accent-color);
@@ -59,14 +60,11 @@ hr {
 
 .container {
   width: 90%;
-  margin-top: 200px;
+  margin: 175px auto;
+  padding: 0;
 }
 
 /* navbar */
-.navbar {
-  padding: 15px 46px 15px 46px;
-  background-color: var(--accent-background-color);
-}
 .nav-link {
   font-size: 20px;
 }
@@ -189,9 +187,6 @@ hr {
 }
 
 /* prices */
-.wrapper {
-  padding: 15vh 46px;
-}
 .price-subtitle {
   font-size: 16px;
   text-decoration: underline;
