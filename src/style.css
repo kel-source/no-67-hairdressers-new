@@ -318,6 +318,10 @@ hr {
   .contact-address h3 {
     margin-top: 30vh;
   }
+  .products-p {
+    font-size: 15px;
+    margin: 20px 0px;
+  }
 }
 @media (max-width: 992px) {
   .md-hidden {
