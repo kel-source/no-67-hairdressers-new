@@ -202,7 +202,6 @@ hr {
   margin: 50px 0;
 }
 .products-p {
-  font-size: 25px;
   margin: 20px 40px;
 }
 .btn {
@@ -225,11 +224,10 @@ hr {
 
 /* eco */
 .eco a {
-  text-decoration: underline;
   font-weight: bold;
 }
 .eco a:hover {
-  color: #003700;
+  text-decoration: underline;
 }
 .heart-wrap {
   text-align: center;
@@ -251,7 +249,18 @@ hr {
   color: white;
 }
 .contact-wrapper {
-  padding: 24vh 0 10vh 0;
+  width: 90%;
+  margin: 0 auto;
+}
+.contact-icons {
+  height: 95vh;
+  padding-top: 35vh;
+}
+.contact-address {
+  height: 95vh;
+}
+.contact-address h3 {
+  padding-top: 35vh;
 }
 .contact-link {
   font-size: 100px;
@@ -313,17 +322,7 @@ hr {
     margin: 0 5%;
     padding: 40px 0;
   }
-  .contact-icons {
-    height: 71vh;
-  }
-  .contact-address {
-    height: 81vh;
-  }
-  .contact-address h3 {
-    margin-top: 30vh;
-  }
   .products-p {
-    font-size: 15px;
     margin: 20px 0px;
   }
 }
@@ -347,5 +346,8 @@ hr {
   }
   .lg-product-img {
     width: 190px;
+  }
+  .contact-wrapper {
+    max-width: 1500px;
   }
 }
