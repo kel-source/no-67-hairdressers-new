@@ -320,12 +320,20 @@ hr {
   .row-wrapper {
     height: 200%;
   }
-  .contact-icons,
+  .row-wrapper .col-6 {
+    padding: 0;
+  }
+  .contact-icons {
+    padding-top: 29vh !important;
+  }
   .contact-address h3 {
     padding-top: 23vh !important;
   }
-  .contact-icons {
-    padding-left: 0;
+  .contact-icons .col-6 {
+    text-align: left !important;
+  }
+  .contact-link {
+    font-size: 75px;
   }
 }
 @media (max-width: 600px) {
